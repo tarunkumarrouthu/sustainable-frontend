@@ -10,7 +10,7 @@ const BestSeller = () => {
 
     return (
         <>
-            <BookCards books={books} headline={"Best Seller Books"} />
+            <BookCards books={books} headline={"Best Sustainable Products"} />
         </>
     )
 }
