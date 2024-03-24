@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ManageBooks = () => {
     const [allBooks, setAllBooks] = useState([]);
     useEffect(() => {
-        fetch(`process.env.REACT_BACKEND/all-books`)
+        fetch(`https://sustainable-backend.vercel.app//all-books`)
             .then((res) => res.json())
             .then((data) => {
                 // console.log(data);
@@ -17,7 +17,7 @@ const ManageBooks = () => {
     // delete a books
     const handleDelete = (id) => {
         // console.log(id)
-        fetch(`process.env.REACT_BACKEND/book/${id}`, {
+        fetch(`https://sustainable-backend.vercel.app//book/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

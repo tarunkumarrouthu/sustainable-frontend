@@ -7,7 +7,7 @@ export default function Shop() {
   const [books, setBooks] = useState([]);
 // fetching data
   useEffect(() =>{
-    fetch('process.env.REACT_BACKEND/all-books')
+    fetch('https://sustainable-backend.vercel.app//all-books')
     .then(res => res.json())
     .then(data => setBooks(data))
   }, [loading]);

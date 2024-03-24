@@ -5,7 +5,7 @@ const OtherBooks = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        fetch("process.env.REACT_BACKEND/all-books").then(res => res.json()).then(data => setBooks(data.slice(5, 12)))
+        fetch("https://sustainable-backend.vercel.app//all-books").then(res => res.json()).then(data => setBooks(data.slice(5, 12)))
     }, [])
 
     return (
