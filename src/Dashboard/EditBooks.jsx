@@ -61,7 +61,7 @@ const EditBooks = () => {
     // console.log(bookObj)
 
     // update the book object
-    fetch(`process.env.REACT_BACKEND/book/${id}`, {
+    fetch(process.env.REACT_BACKEND+`/book/${id}`, {
       method: "PATCH",
 
       headers: {
