@@ -56,22 +56,22 @@ const SideBar = () => {
                 Users
               </p>
             </Sidebar.Item>
-            <Sidebar.Item
+            {/* <Sidebar.Item
               href="#"
               icon={HiShoppingBag}
             >
               <p>
                 Products
               </p>
-            </Sidebar.Item>
-            <Sidebar.Item
+            </Sidebar.Item> */}
+            {/* <Sidebar.Item
               href="/login"
               icon={HiArrowSmRight}
             >
               <p>
                 Sign In
               </p>
-            </Sidebar.Item>
+            </Sidebar.Item> */}
             <Sidebar.Item
               href="/logout"
               icon={HiTable}
@@ -81,7 +81,7 @@ const SideBar = () => {
               </p>
             </Sidebar.Item>
           </Sidebar.ItemGroup>
-          <Sidebar.ItemGroup>
+          {/* <Sidebar.ItemGroup>
             <Sidebar.Item
               href="#"
               icon={HiChartPie}
@@ -106,7 +106,7 @@ const SideBar = () => {
                 Help
               </p>
             </Sidebar.Item>
-          </Sidebar.ItemGroup>
+          </Sidebar.ItemGroup> */}
         </Sidebar.Items>
       </Sidebar>
       <div className='md:hidden'>

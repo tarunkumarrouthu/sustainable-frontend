@@ -4,16 +4,16 @@ import { AuthContext } from '../../contexts/AuthProvider';
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
+    title: 'Sustainability in Clothing',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
+      'Sustainable clothing aims to minimize environmental impact throughtout its lifecycle,from production to disposal.This includes using eco-friendly materials like silk,hemp,cotton,wool,jute etc...',
+    date: 'Mar 1, 2024',
+    datetime: '2024-03-01',
+    category: { title: 'Clothing', href: '#' },
     author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
+      name: 'Tarun Kumar',
+      role: 'Avanthi student',
       href: '#',
       imageUrl:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -21,12 +21,13 @@ const posts = [
   },
   {
     id: 2,
-    title: 'Boost your conversion rate',
+    title: 'Sustainability in Home Appliances',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
+    //Many sustainable appliances are made from recycled materials and are built to last, reducing waste.Choosing sustainable home appliances not only saves money on utility bills but also contributes to a greener future for our planet.
+      'Many sustainable home appliances are constructed from recycled materials and designed to be durable, thereby reducing waste. Choosing sustainable home appliances such as wooden, steel, and clay utensils, not only saves money on utility bills but also contributes to a greener future for our planet.',
+    date: 'Mar 1, 2024',
+    datetime: '2024-03-01',
     category: { title: 'Marketing', href: '#' },
     author: {
       name: 'Michael Foster',
@@ -35,16 +36,16 @@ const posts = [
       imageUrl:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-  },
+  }, 
   {
     id: 4,
-    title: 'Boost your conversion rate',
+    title: 'Sustainability in Beauty Products',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
+      'Sustainable beauty products prioritize natural and organic ingredients, minimizing harmful chemicals.Eco-friendly beauty products are made without harmful chemicals,benefiting both the environment and ourselves.',
+    date: 'Mar 1, 2024',
+    datetime: '2024-03-01',
+    category: { title: 'Beauty', href: '#' },
     author: {
       name: 'Michael Foster',
       role: 'Co-Founder / CTO',
@@ -55,13 +56,13 @@ const posts = [
   },
   {
     id: 3,
-    title: 'Boost your conversion rate',
+    title: 'Sustainability in Food Groceries',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
+      'Sustainable food or grocery shopping is the conscious purchase of food products that have little or no negative environmental impact. It entails purchasing environmentally friendly food such as chemical free vegetables and fruits to prioritize quality over quantity.',
+    date: 'Mar 1, 2024',
+    datetime: '2024-03-01',
+    category: { title: 'Food and Groceries', href: '#' },
     author: {
       name: 'Michael Foster',
       role: 'Co-Founder / CTO',
@@ -88,9 +89,9 @@ const Blog = () => {
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the Sustainable GUide</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Learn how to grow your business with our expert advice.
+              Save our Mother Earth by Learning which product is sustainable and which is not!
             </p>
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">

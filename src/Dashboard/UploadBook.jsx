@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import.meta.env.VITE_BACKEND_URL
 import { Button, Checkbox, Label, Select, TextInput, Textarea } from 'flowbite-react';
 
 const UploadBook = () => {
@@ -42,7 +42,7 @@ const UploadBook = () => {
       bookPDFURL,
     };
     // console.log(dataObj)
-    fetch("https://sustainable-backend.vercel.app//upload-book", {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/upload-book`, {
       method: "POST",
 
       headers: {
@@ -54,7 +54,7 @@ const UploadBook = () => {
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
-        alert("Book updated successfully!!!!");
+        alert("Product updated successfully!!!!");
         form.reset();
       });
   };

@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Card, Spinner } from 'flowbite-react';
 import { AuthContext } from '../../contexts/AuthProvider';
-
+import { Link } from 'react-router-dom';
+import.meta.env.VITE_BACKEND_URL
 export default function Shop() {
   const {loading } = useContext(AuthContext);
   const [books, setBooks] = useState([]);
 // fetching data
   useEffect(() =>{
-    fetch('https://sustainable-backend.vercel.app//all-books')
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/all-books`)
     .then(res => res.json())
     .then(data => setBooks(data))
   }, [loading]);
@@ -34,11 +35,11 @@ export default function Shop() {
               </h5>
               <p className="font-normal text-gray-700 dark:text-gray-400">
                 <p>
-                  Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order....
+                  {book.bookDescription}
                 </p>
               </p>
 
-              <button className='px-4 py-2 bg-blue-600 text-white rounded'>Buy Now</button>
+              <Link to={book.bookPDFURL}><button className='px-4 py-2 bg-blue-600 text-white rounded'>Buy Now</button></Link>
             </Card>)
           }
         </div>

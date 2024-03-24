@@ -7,7 +7,7 @@ const Dashboard = () => {
     <div className="px-4">
       <div className="w-full mx-auto">
         <div className="bg-white rounded-3xl p-8 mb-5">
-          <h1 className="text-3xl font-bold mb-10">Demo Dashboard development for the product inventory</h1>
+          <h1 className="text-3xl font-bold mb-10">Dashboard development for the product inventory</h1>
           <div className="flex items-center justify-between">
             <div className="flex items-stretch">
               <div className="text-gray-400 text-xs">Members <br />connected</div>

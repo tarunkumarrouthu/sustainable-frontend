@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Checkbox, Label, Select, TextInput, Textarea } from 'flowbite-react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import.meta.env.VITE_BACKEND_URL
 
 const EditBooks = () => {
   const { id } = useParams();
@@ -61,7 +62,7 @@ const EditBooks = () => {
     // console.log(bookObj)
 
     // update the book object
-    fetch(`https://sustainable-backend.vercel.app//book/${id}`, {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/book/${id}`, {
       method: "PATCH",
 
       headers: {

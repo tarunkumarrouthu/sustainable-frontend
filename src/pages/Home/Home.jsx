@@ -13,7 +13,7 @@ export const Home = () => {
       <Banner/>
       <BestSeller/>
       <FavoriteBook/>
-      <PromoBanner/>
+      {/* <PromoBanner/> */}
       <OtherBooks/>
       <Review/>
     </div>
