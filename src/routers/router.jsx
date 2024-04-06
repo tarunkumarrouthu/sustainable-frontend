@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/book/:id",
-        element: <SignleBook />,
+        element: <SingleBook />,
 <<<<<<< HEAD
         loader: ({ params }) => fetch(`${import.meta.env.VITE_BACKEND_URL}/book/${params.id}`)
 =======
