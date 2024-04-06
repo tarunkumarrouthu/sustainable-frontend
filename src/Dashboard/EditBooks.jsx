@@ -9,26 +9,13 @@ const EditBooks = () => {
   // console.log(bookTitle)
 
   const bookCategories = [
-    "Fiction",
-    "Non-fiction",
-    "Mystery",
-    "Programming",
-    "Science fiction",
-    "Fantasy",
-    "Horror",
-    "Biography",
-    "Autobiography",
-    "History",
-    "Self-help",
-    "Business",
-    "Memoir",
-    "Poetry",
-    "Children's books",
-    "Travel",
-    "Religion and spirituality",
-    "Science",
-    "Art and design",
-  ];
+  "Clothing",
+    "Food and groceries",
+    "Home appliances",
+    "Beauty-care",
+    "Travel leisure",
+    "Stationary",
+   ];
 
   const [selectedBookCategory, setSelectedBookCategory] = useState(
     bookCategories[0]
@@ -90,12 +77,12 @@ const EditBooks = () => {
               <div className="mb-2 block">
                 <Label
                   htmlFor="bookTitle"
-                  value="Book Title"
+                  value="Product Title"
                 />
               </div>
               <TextInput
                 id="bookTitle"
-                placeholder="Book Name"
+                placeholder="Product Name"
                 required
                 type="text"
                 name='bookTitle'
@@ -109,7 +96,7 @@ const EditBooks = () => {
               <div className="mb-2 block">
                 <Label
                   htmlFor="authorName"
-                  value="Author Name"
+                  value="Product Company"
                 />
               </div>
               <TextInput
@@ -132,7 +119,7 @@ const EditBooks = () => {
               <div className="mb-2 block">
                 <Label
                   htmlFor="imageURL"
-                  value="Book Image URL"
+                  value="Product image URL"
                 />
               </div>
               <TextInput
@@ -151,7 +138,7 @@ const EditBooks = () => {
               <div className="mb-2 block">
                 <Label
                   htmlFor="inputState"
-                  value="Book Category"
+                  value="Product Category"
                 />
               </div>
               <Select
@@ -176,7 +163,7 @@ const EditBooks = () => {
             <div className="mb-2 block">
               <Label
                 htmlFor="bookDescription"
-                value="Book Description"
+                value="Product Description"
               />
             </div>
             <Textarea
@@ -197,7 +184,7 @@ const EditBooks = () => {
             <div className="mb-2 block">
               <Label
                 htmlFor="bookPDFURL"
-                value="Book PDF Link"
+                value="product Link"
               />
             </div>
             <TextInput

@@ -10,7 +10,7 @@ const OtherBooks = () => {
 
     return (
         <div className='mt-24'>
-            <BookCards books={books} headline={"Other Products"} />
+            {/* <BookCards books={books} headline={"Other Products"} /> */}
         </div>
     )
 }

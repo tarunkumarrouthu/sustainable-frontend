@@ -65,9 +65,8 @@ const About = () => {
                 <li className="flex gap-x-3">
                   <BsCloudArrowUp className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                    blanditiis ratione.
+                    <strong className="font-semibold text-gray-900">Push to deploy.</strong> When selecting eco-friendly products across categories such as clothing, food and groceries, stationary, and beauty, it's essential to prioritize sustainability and ethical considerations. In clothing, opt for garments made from sustainable materials like organic cotton or recycled fibers, while favoring brands committed to fair labor practices and transparent supply chains. When it comes to food and groceries, choose organic produce sourced 
+                    locally and in-season to minimize environmental impact and support sustainable farming practices. Similarly, for stationary items, look for those crafted from recycled or sustainably sourced materials, and opt for refillable or reusable options to reduce waste. In the realm of beauty, seek out products made with natural ingredients, free from harmful chemicals, and packaged in recyclable or biodegradable materials, while also supporting cruelty-free and vegan brands. By making conscious choices in these categories, consumers can contribute to a more eco-friendly lifestyle and promote positive change for the planet.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
