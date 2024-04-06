@@ -49,7 +49,11 @@ const EditBooks = () => {
     // console.log(bookObj)
 
     // update the book object
+<<<<<<< HEAD
     fetch(`${import.meta.env.VITE_BACKEND_URL}/book/${id}`, {
+=======
+    fetch(`https://sustainable-backend.vercel.app/book/${id}`, {
+>>>>>>> 8f7b0f3cf7d82ebebdba1f51118dd2d7ee5ce623
       method: "PATCH",
 
       headers: {

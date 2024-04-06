@@ -7,7 +7,11 @@ import.meta.env.VITE_BACKEND_URL
 const ManageBooks = () => {
     const [allBooks, setAllBooks] = useState([]);
     useEffect(() => {
+<<<<<<< HEAD
         fetch(`${import.meta.env.VITE_BACKEND_URL}/all-books`)
+=======
+        fetch(`https://sustainable-backend.vercel.app/all-books`)
+>>>>>>> 8f7b0f3cf7d82ebebdba1f51118dd2d7ee5ce623
             .then((res) => res.json())
             .then((data) => {
                 // console.log(data);
@@ -18,7 +22,11 @@ const ManageBooks = () => {
     // delete a books
     const handleDelete = (id) => {
         // console.log(id)
+<<<<<<< HEAD
         fetch(`${import.meta.env.VITE_BACKEND_URL}/book/${id}`, {
+=======
+        fetch(`https://sustainable-backend.vercel.app/book/${id}`, {
+>>>>>>> 8f7b0f3cf7d82ebebdba1f51118dd2d7ee5ce623
           method: "DELETE",
         })
           .then((res) => res.json())
