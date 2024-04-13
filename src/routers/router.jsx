@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/book/:id",
-        element: <SingleBook />,
+        element: <SignleBook />
 <<<<<<< HEAD
         loader: ({ params }) => fetch(`${import.meta.env.VITE_BACKEND_URL}/book/${params.id}`)
 =======
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       { path: "/admin/dashboard", element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>},
       { path: "/admin/dashboard/upload", element: <UploadBook /> },
       { path: "/admin/dashboard/manage", element: <ManageBooks /> },
-      { path: "/admin/dashboard/edit-books/:id", element: <EditBooks />,
+      { path: "/admin/dashboard/edit-books/:id", element: <EditBooks />
 <<<<<<< HEAD
       loader: ({ params }) => fetch(`${import.meta.env.VITE_BACKEND_URL}/book/${params.id}`)
 =======
