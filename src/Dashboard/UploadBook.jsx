@@ -42,11 +42,9 @@ const UploadBook = () => {
       bookPDFURL,
     };
     // console.log(dataObj)
-<<<<<<< HEAD
-    fetch(`${import.meta.env.VITE_BACKEND_URL}/upload-book`, {
-=======
+ 
     fetch("https://sustainable-backend.vercel.app/upload-book", {
->>>>>>> 8f7b0f3cf7d82ebebdba1f51118dd2d7ee5ce623
+ 
       method: "POST",
 
       headers: {

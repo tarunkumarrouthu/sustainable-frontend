@@ -8,11 +8,9 @@ export default function Shop() {
   const [books, setBooks] = useState([]);
 // fetching data
   useEffect(() =>{
-<<<<<<< HEAD
-    fetch(`${import.meta.env.VITE_BACKEND_URL}/all-books`)
-=======
+ 
     fetch('https://sustainable-backend.vercel.app/all-books')
->>>>>>> 8f7b0f3cf7d82ebebdba1f51118dd2d7ee5ce623
+ 
     .then(res => res.json())
     .then(data => setBooks(data))
   }, [loading]);

@@ -33,12 +33,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/book/:id",
-        element: <SignleBook />
-<<<<<<< HEAD
-        loader: ({ params }) => fetch(`${import.meta.env.VITE_BACKEND_URL}/book/${params.id}`)
-=======
-        loader: ({ params }) => fetch(`https://sustainable-backend.vercel.app/book/${params.id}`)
->>>>>>> 8f7b0f3cf7d82ebebdba1f51118dd2d7ee5ce623
+ 
+        element: <SignleBook />,
+        loader: ({ params }) => fetch(`https://sustainable-backend.vercel.app//book/${params.id}`)
+ 
       },
       {
         path: "/about",
@@ -57,12 +55,12 @@ const router = createBrowserRouter([
       { path: "/admin/dashboard", element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>},
       { path: "/admin/dashboard/upload", element: <UploadBook /> },
       { path: "/admin/dashboard/manage", element: <ManageBooks /> },
-      { path: "/admin/dashboard/edit-books/:id", element: <EditBooks />
-<<<<<<< HEAD
-      loader: ({ params }) => fetch(`${import.meta.env.VITE_BACKEND_URL}/book/${params.id}`)
-=======
+ 
+      { path: "/admin/dashboard/edit-books/:id", element: <EditBooks />,
+ 
       loader: ({ params }) => fetch(`https://sustainable-backend.vercel.app/book/${params.id}`)
->>>>>>> 8f7b0f3cf7d82ebebdba1f51118dd2d7ee5ce623
+ 
+       
     },
     ],
   },
