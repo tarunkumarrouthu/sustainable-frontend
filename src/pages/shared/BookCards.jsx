@@ -48,7 +48,7 @@ const BookCards = ({headline, books}) => {
                 >
                     {
                         books.map(book => <SwiperSlide className='text-center flex items-center justify-center' key={book._id}>
-                            <Link to={`/book/${book._id}`} className='cursor-pointer'>
+                            <Link to={"/shop"} className='cursor-pointer'>
                                 <div className='bg-gray-100 p-8 rounded-lg relative'>
                                     <img src={book.imageURL} alt="" className='w-full' />
                                     <div className='absolute top-3 right-3 bg-blue-700 hover:bg-black p-2 rounded '>
