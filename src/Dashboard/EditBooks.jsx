@@ -64,6 +64,7 @@ const EditBooks = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        alert("Product has been updated successfully");
       });
   };
   
