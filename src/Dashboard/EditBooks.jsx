@@ -31,7 +31,7 @@ const EditBooks = () => {
     event.preventDefault();
     const form = event.target;
 
-    const bookTitle = form.BookTitle.value;
+    const bookTitle = form.bookTitle.value;
     const authorName = form.authorName.value;
     const imageURL = form.imageURL.value;
     const category = form.categoryName.value;
